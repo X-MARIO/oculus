@@ -49,10 +49,73 @@ body {
     color: #5C5C5C;
 }
 
+/* header */
+
 .header {
     border-bottom: 1px solid #CACAD6;
 }
 
 .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
 
+.menu {
+    display: flex;
+    gap: 0 20px;
+}
+
+.basket {
+    position: relative;
+}
+
+.basket--on span {
+    font-size: 11px;
+    width: 15px;
+    height: 15px;
+    background: #000000;
+    border-radius: 50%;
+    color: #ffffff;
+
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 0;
+    bottom: 0;
+    right: -2px;
+}
+
+/* main */
+
+.top {
+    min-height: calc(100vh - 81px); /* 80px height header + 1px border header */
+    background-image: url("../images/toy_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.title {
+    padding-top: 16%;
+    font-size: 96px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.top__text {
+    font-size: 13px;
+    margin-bottom: 50px;
+}
+
+.buy__text {
+    padding-top: 6px;
+    font-size: 13px;
 }
